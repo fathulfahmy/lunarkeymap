@@ -92,8 +92,8 @@ This extension provides keymaps for [Vim](https://marketplace.visualstudio.com/i
 ### Contributing
 
 1. Go to Lunar Keymap [GitHub repository](https://github.com/fathulfahmy/lunarkeymap).
-2. Open [package.json](https://github.com/fathulfahmy/lunarkeymap).
-3. Add JSON object to [contributes.configurationDefaults]() or [contributes.keybindings](https://github.com/fathulfahmy/lunarkeymap).
+2. Open [package.json](https://github.com/fathulfahmy/lunarkeymap/blob/main/package.jsonhttps://github.com/fathulfahmy/lunarkeymap).
+3. Add JSON object to [contributes.configurationDefaults]() or [contributes.keybindings](https://github.com/fathulfahmy/lunarkeymaphttps://github.com/fathulfahmy/lunarkeymap/blob/main/package.json).
 4. Open a pull request.
 
 ### License
