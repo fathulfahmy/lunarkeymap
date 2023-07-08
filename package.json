@@ -8,6 +8,7 @@
     "type": "git",
     "url": "https://github.com/fathulfahmy/lunarkeymap"
   },
+  "icon": "assets/lunarkeymap-logo.png",
   "engines": {
     "vscode": "^1.80.0"
   },
