@@ -83,6 +83,7 @@ This extension provides keymaps for [Vim](https://marketplace.visualstudio.com/i
 
 ### Installation
 
+[Go to Lunar Keymap on Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=fathulfahmy.lunarkeymap)
 1. Install Visual Studio Code
 2. Launch Visual Studio Code
 3. Open extension view `ctrl+shift+x`
