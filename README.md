@@ -98,7 +98,7 @@ This extension provides keymaps for [Vim](https://marketplace.visualstudio.com/i
 
 ### License
 
-This extension is licensed under the [MIT License](https://github.com/fathulfahmy/lunarkeymap)
+This extension is licensed under the [MIT License](https://github.com/fathulfahmy/lunarkeymap/blob/main/LICENSEhttps://github.com/fathulfahmy/lunarkeymap)
 
 ### Reference
 
