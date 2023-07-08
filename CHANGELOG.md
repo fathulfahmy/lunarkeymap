@@ -1,9 +1,15 @@
 # Change Log
 
-All notable changes to the "lunarkeymap" extension will be documented in this file.
+## v1.0.4 (09-07-2023)
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+**Changed**
+- Changed extension name from `lunarkeymap` to `LunarKeymap`
+- Visual Studio Code >= `1.74.0` is now supported
 
-## [Unreleased]
+## v1.0.3 (08-07-2023)
 
-- Initial release
+**Changed**
+- Paste via `ctrl+v` is now disabled in normal mode
+
+**Fixed**
+- Enabled `ctrl+v` to work as expected in vim
