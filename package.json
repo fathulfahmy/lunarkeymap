@@ -4,6 +4,10 @@
   "description": "Lunarvim inspired keybindings to achieve keyboard driven workflow in VS Code",
   "version": "1.0.0",
   "publisher": "fathulfahmy",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fathulfahmy/lunarkeymap"
+  },
   "engines": {
     "vscode": "^1.80.0"
   },
