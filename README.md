@@ -71,11 +71,62 @@ This extension provides keymaps for [Vim](https://marketplace.visualstudio.com/i
   "<C-f>": false,
   "<C-c>": false,
   "<C-x>": false,
-  "<C-v>": false,
   "<C-z>": false,
   "<C-y>": false
 }
 ```
+
+### Change Which Key Shortcut Menu Keybinding
+
+1. Open command palette `ctrl+shift+p`
+2. Open User Settings (JSON)
+3. Add
+
+```
+ "vim.normalModeKeyBindingsNonRecursive":[
+   {
+      "before": [
+            "<C-space>"
+          ],
+          "commands": [
+            "whichkey.show"
+          ]
+   }
+ ],
+ "vim.normalModeKeyBindingsNonRecursive":[
+   {
+      "before": [
+            "<C-space>"
+          ],
+          "commands": [
+            "whichkey.show"
+          ]
+   }
+ ],
+ "vim.normalModeKeyBindingsNonRecursive":[
+   {
+      "before": [
+            "<C-space>"
+          ],
+          "commands": [
+            "whichkey.show"
+          ]
+   }
+ ],
+```
+
+4. Save user settings
+5. Open command palette `ctrl+shift+p`
+6. Open Keyboard Shortcuts (JSON)
+7. Add
+
+```
+{
+        "key": "ctrl+space",
+        "command": "whichkey.show"
+},
+```
+8. Save keyboard shortcuts
 
 ### Known Issues
 
@@ -84,6 +135,7 @@ This extension provides keymaps for [Vim](https://marketplace.visualstudio.com/i
 ### Installation
 
 [Go to Lunar Keymap on Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=fathulfahmy.lunarkeymap)
+
 1. Install Visual Studio Code
 2. Launch Visual Studio Code
 3. Open extension view `ctrl+shift+x`
