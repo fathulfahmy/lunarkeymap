@@ -1,5 +1,22 @@
 # Change Log
 
+## v1.0.7 (10-07-2023)
+
+**Added**
+- Dependencies will be uninstalled automatically upon lunarkeymap uninstallation
+
+**Changed**
+- `ctrl+a` is handled by vim
+- `ctrl+f` is handled by vim
+- `ctrl+c` is handled by vim
+- `ctrl+x` is handled by vim
+- `ctrl+z` is handled by vim
+- `ctrl+y` is handled by vim
+- `ctrl+n` to remove search highlight is removed
+
+**Fixed**
+- `ctrl+hjkl` not working
+
 ## v1.0.4 (09-07-2023)
 
 **Changed**
