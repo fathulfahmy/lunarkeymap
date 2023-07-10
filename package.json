@@ -2,7 +2,7 @@
   "name": "lunarkeymap",
   "displayName": "LunarKeymap",
   "description": "Lunarvim inspired keybindings to achieve keyboard driven workflow in VS Code",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "publisher": "fathulfahmy",
   "repository": {
     "type": "git",
@@ -24,158 +24,12 @@
       "vim.hlsearch": true,
       "vim.sneak": true,
       "vim.handleKeys": {
-        "<C-a>": false,
-        "<C-f>": false,
-        "<C-c>": false,
-        "<C-x>": false,
-        "<C-z>": false,
-        "<C-y>": false
+        "<C-space>": false,
+        "<C-h>": false,
+        "<C-j>": false,
+        "<C-k>": false,
+        "<C-l>": false
       },
-      "vim.normalModeKeyBindingsNonRecursive": [
-        {
-          "before": [
-            "<C-h>"
-          ],
-          "commands": [
-            "workbench.action.navigateLeft"
-          ]
-        },
-        {
-          "before": [
-            "<C-j>"
-          ],
-          "commands": [
-            "workbench.action.navigateDown"
-          ]
-        },
-        {
-          "before": [
-            "<C-k>"
-          ],
-          "commands": [
-            "workbench.action.navigateUp"
-          ]
-        },
-        {
-          "before": [
-            "<C-l>"
-          ],
-          "commands": [
-            "workbench.action.navigateRight"
-          ]
-        },
-        {
-          "before": [
-            "<C-space>"
-          ],
-          "commands": [
-            "whichkey.show"
-          ]
-        },
-        {
-          "before": [
-            "<tab>"
-          ],
-          "commands": [
-            "workbench.action.nextEditor"
-          ]
-        },
-        {
-          "before": [
-            "<S-tab>"
-          ],
-          "commands": [
-            "workbench.action.previousEditor"
-          ]
-        },
-        {
-          "before": [
-            "<C-n>"
-          ],
-          "commands": [
-            ":nohl"
-          ]
-        }
-      ],
-      "vim.visualModeKeyBindingsNonRecursive": [
-        {
-          "before": [
-            "<C-h>"
-          ],
-          "commands": [
-            "workbench.action.navigateLeft"
-          ]
-        },
-        {
-          "before": [
-            "<C-j>"
-          ],
-          "commands": [
-            "workbench.action.navigateDown"
-          ]
-        },
-        {
-          "before": [
-            "<C-k>"
-          ],
-          "commands": [
-            "workbench.action.navigateUp"
-          ]
-        },
-        {
-          "before": [
-            "<C-l>"
-          ],
-          "commands": [
-            "workbench.action.navigateRight"
-          ]
-        },
-        {
-          "before": [
-            "<C-space>"
-          ],
-          "commands": [
-            "whichkey.show"
-          ]
-        },
-        {
-          "before": [
-            ">"
-          ],
-          "commands": [
-            "editor.action.indentLines"
-          ]
-        },
-        {
-          "before": [
-            "<"
-          ],
-          "commands": [
-            "editor.action.outdentLines"
-          ]
-        },
-        {
-          "before": [
-            "p"
-          ],
-          "after": [
-            "p",
-            "g",
-            "v",
-            "y"
-          ]
-        }
-      ],
-      "vim.insertModeKeyBindings": [
-        {
-          "before": [
-            "<C-space>"
-          ],
-          "commands": [
-            "whichkey.show"
-          ]
-        }
-      ],
       "whichkey.sortOrder": "none",
       "whichkey.bindings": [
         {
@@ -909,6 +763,27 @@
       {
         "key": "ctrl+j",
         "command": "-workbench.action.togglePanel"
+      },
+
+      {
+        "key": "tab",
+        "command": "workbench.action.nextEditor",
+        "when": "vim.active && vim.mode == 'Normal'"
+      },
+      {
+        "key": "shift+tab",
+        "command": "workbench.action.previousEditor",
+        "when": "vim.active && vim.mode == 'Normal'"
+      },
+      {
+        "key": ">",
+        "command": "editor.action.indentLines",
+        "when": "vim.active && vim.mode == 'Visual'"
+      },
+      {
+        "key": "<",
+        "command": "editor.action.outdentLines",
+        "when": "vim.active && vim.mode == 'Visual'"
       }
     ]
   },

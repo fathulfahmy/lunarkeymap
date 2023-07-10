@@ -29,10 +29,8 @@ This extension provides keymaps for [Vim](https://marketplace.visualstudio.com/i
 
 | Key            | Mode    | Features                                   |
 | -------------- | ------- | ------------------------------------------ |
-| `ctrl+n`       | n       | Turn off search highlighting               |
 | `>`            | v       | Indent selected lines                      |
 | `<`            | v       | Outdent selected lines                     |
-| `p`            | v       | Replace selected lines without overwriting |
 | `ctrl+shift+t` | n, v, i | Toggle terminal                            |
 | `ctrl+space`   | n, v, i | Open which key shortcut menu               |
 
@@ -67,66 +65,26 @@ This extension provides keymaps for [Vim](https://marketplace.visualstudio.com/i
 "vim.hlsearch": true,
 "vim.sneak": true,
 "vim.handleKeys": {
-  "<C-a>": false,
-  "<C-f>": false,
-  "<C-c>": false,
-  "<C-x>": false,
-  "<C-z>": false,
-  "<C-y>": false
+  "<C-space>": false,
+  "<C-h>": false,
+  "<C-j>": false,
+  "<C-k>": false,
+  "<C-l>": false
 }
 ```
 
 ### Change Which Key Shortcut Menu Keybinding
 
 1. Open command palette `ctrl+shift+p`
-2. Open User Settings (JSON)
+2. Open Keyboard Shortcuts (JSON)
 3. Add
-
-```
- "vim.normalModeKeyBindingsNonRecursive":[
-   {
-      "before": [
-            "<C-space>"
-          ],
-          "commands": [
-            "whichkey.show"
-          ]
-   }
- ],
- "vim.normalModeKeyBindingsNonRecursive":[
-   {
-      "before": [
-            "<C-space>"
-          ],
-          "commands": [
-            "whichkey.show"
-          ]
-   }
- ],
- "vim.normalModeKeyBindingsNonRecursive":[
-   {
-      "before": [
-            "<C-space>"
-          ],
-          "commands": [
-            "whichkey.show"
-          ]
-   }
- ],
-```
-
-4. Save user settings
-5. Open command palette `ctrl+shift+p`
-6. Open Keyboard Shortcuts (JSON)
-7. Add
-
 ```
 {
         "key": "ctrl+space",
         "command": "whichkey.show"
 },
 ```
-8. Save keyboard shortcuts
+4. Save keyboard shortcuts
 
 ### Known Issues
 
