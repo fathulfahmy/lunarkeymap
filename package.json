@@ -2,7 +2,7 @@
   "name": "lunarkeymap",
   "displayName": "LunarKeymap",
   "description": "Lunarvim inspired keybindings to achieve keyboard driven workflow in VS Code",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "publisher": "fathulfahmy",
   "repository": {
     "type": "git",
