@@ -1,5 +1,13 @@
 # Change Log
 
+## v1.0.8 (12-07-2023)
+**Changed**
+- disabled vscode multiline editing via `ctrl+d` by default
+- enabled vscodevim move page down via `ctrl+d` by default
+
+**Fixed**
+- `tab` conflicts with terminal completion
+
 ## v1.0.7 (10-07-2023)
 
 **Added**

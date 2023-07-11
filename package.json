@@ -28,7 +28,8 @@
         "<C-h>": false,
         "<C-j>": false,
         "<C-k>": false,
-        "<C-l>": false
+        "<C-l>": false,
+        "<C-d>": true
       },
       "whichkey.sortOrder": "none",
       "whichkey.bindings": [
@@ -768,22 +769,22 @@
       {
         "key": "tab",
         "command": "workbench.action.nextEditor",
-        "when": "vim.active && vim.mode == 'Normal'"
+        "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
       },
       {
         "key": "shift+tab",
         "command": "workbench.action.previousEditor",
-        "when": "vim.active && vim.mode == 'Normal'"
+        "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
       },
       {
         "key": ">",
         "command": "editor.action.indentLines",
-        "when": "vim.active && vim.mode == 'Visual'"
+        "when": "editorTextFocus && vim.active && vim.mode == 'Visual'"
       },
       {
         "key": "<",
         "command": "editor.action.outdentLines",
-        "when": "vim.active && vim.mode == 'Visual'"
+        "when": "editorTextFocus && vim.active && vim.mode == 'Visual'"
       }
     ]
   },

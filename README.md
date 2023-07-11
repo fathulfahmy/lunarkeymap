@@ -1,4 +1,4 @@
-# Lunar Keymap
+# LunarKeymap
 
 This extension provides keymaps for [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) and [Which Key](https://marketplace.visualstudio.com/items?itemName=VSpaceCode.whichkey) to achieve keyboard driven workflow in Visual Studio Code. Inspired by LunarVim.
 
@@ -8,13 +8,13 @@ This extension provides keymaps for [Vim](https://marketplace.visualstudio.com/i
 
 | Key         | Mode    | Features           |
 | ----------- | ------- | ------------------ |
-| `ctrl+h`    | n, v    | Move focus left    |
-| `ctrl+j`    | n, v    | Move focus down    |
-| `ctrl+k`    | n, v    | Move focus up      |
-| `ctrl+l`    | n, v    | Move focus right   |
+| `ctrl+h`    | n, v, i | Move focus left    |
+| `ctrl+j`    | n, v, i | Move focus down    |
+| `ctrl+k`    | n, v, i | Move focus up      |
+| `ctrl+l`    | n, v, i | Move focus right   |
+| `alt+j`     | n, v, i | Focus terminal     |
 | `tab`       | n, v    | Cycle next tab     |
 | `shift+tab` | n, v    | Cycle previous tab |
-| `alt+j`     | n, v, i | Focus terminal     |
 
 **List navigation**
 
@@ -69,7 +69,8 @@ This extension provides keymaps for [Vim](https://marketplace.visualstudio.com/i
   "<C-h>": false,
   "<C-j>": false,
   "<C-k>": false,
-  "<C-l>": false
+  "<C-l>": false,
+  "<C-d>": true
 }
 ```
 
