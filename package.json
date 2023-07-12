@@ -1,12 +1,11 @@
 {
   "name": "lunarkeymap",
   "displayName": "LunarKeymap",
-  "description": "LunarVim inspired keybindings to achieve keyboard driven workflow in VS Code",
+  "description": "LunarVim inspired keybindings for keyboard driven workflow in VS Code",
   "icon": "assets/lunarkeymap-logo.png",
   "publisher": "fathulfahmy",
   "author": {
     "name": "fathulfahmy",
-    "email": "mfathulfahmy@gmail.com",
     "url": "https://github.com/fathulfahmy"
   },
   "version": "1.0.9",
