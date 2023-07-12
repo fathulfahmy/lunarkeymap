@@ -43,18 +43,19 @@ This extension provides keymaps for [Vim](https://marketplace.visualstudio.com/i
 ### File explorer
 
 ![File explorer navigation demonstration gif](assets/file-navigation.gif)
-| Key | Features |
+
+| Key              | Features          |
 | ---------------- | ----------------- |
-| `ctrl+e` | Open explorer |
-| `a` | Create new file |
+| `ctrl+e`         | Open explorer     |
+| `a`              | Create new file   |
 | `A` or `shift+a` | Create new folder |
-| `h` | Collapse list |
-| `j` | Move down |
-| `k` | Move up |
-| `l` | Expand list |
-| `o` | Expand list |
-| `r` | Rename file |
-| `enter` | Select file |
+| `h`              | Collapse list     |
+| `j`              | Move down         |
+| `k`              | Move up           |
+| `l`              | Expand list       |
+| `o`              | Expand list       |
+| `r`              | Rename file       |
+| `enter`          | Select file       |
 
 ### Which Key (Common)
 
