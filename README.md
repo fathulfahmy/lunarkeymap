@@ -89,7 +89,7 @@ This extension provides keymaps for [Vim](https://marketplace.visualstudio.com/i
 
 Full list of shortcuts are available on `Feature Contributions`
 
-### Defaults
+## Defaults
 
 ```
 "vim.useSystemClipboard": true,
@@ -108,7 +108,7 @@ Full list of shortcuts are available on `Feature Contributions`
 }
 ```
 
-### Change Which Key Shortcut Menu Keybinding
+## Change Which Key Shortcut Menu Keybinding
 
 1. Open command palette `ctrl+shift+p`
 2. Open Keyboard Shortcuts (JSON)
@@ -134,11 +134,11 @@ Full list of shortcuts are available on `Feature Contributions`
 
 8. Save user settings
 
-### Known Issues
+## Known Issues
 
 - `shift+tab` in quick open is not supported
 
-### Installation
+## Installation
 
 [Go to Lunar Keymap on Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=fathulfahmy.lunarkeymap)
 
@@ -148,18 +148,18 @@ Full list of shortcuts are available on `Feature Contributions`
 4. Search and install `Lunar Keymap`
 5. Reload Visual Studio Code
 
-### Contributing
+## Contributing
 
 1. Go to Lunar Keymap [GitHub repository](https://github.com/fathulfahmy/lunarkeymap).
 2. Open [package.json](https://github.com/fathulfahmy/lunarkeymap/blob/main/package.json).
 3. Add JSON object to [contributes.configurationDefaults](https://github.com/fathulfahmy/lunarkeymap/blob/main/package.json) or [contributes.keybindings](https://github.com/fathulfahmy/lunarkeymap/blob/main/package.json).
 4. Open a pull request.
 
-### License
+## License
 
 This extension is licensed under the [MIT License](https://github.com/fathulfahmy/lunarkeymap/blob/main/LICENSE)
 
-### Reference
+## Reference
 
 1. VSCode with embedded Neovim, chris@machine  
    [Open youtube link](https://www.youtube.com/watch?v=g4dXZ0RQWdw)
