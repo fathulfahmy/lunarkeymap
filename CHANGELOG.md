@@ -1,6 +1,6 @@
 # Change Log
 
-## v1.0.9 (13:07-2023)
+## v1.0.9 (13-07-2023)
 **Added**
 - demonsration GIFs
 - paste from clipboard Which Key shortcut
