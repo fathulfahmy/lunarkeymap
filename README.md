@@ -4,7 +4,9 @@ This extension provides keymaps for [Vim](https://marketplace.visualstudio.com/i
 
 ## Usage
 
-**Workspace navigation**
+### Workspace navigation
+
+![Workspace navigation demonstration gif](assets/workspace-navigation.gif)
 
 | Key         | Mode    | Features           |
 | ----------- | ------- | ------------------ |
@@ -16,7 +18,9 @@ This extension provides keymaps for [Vim](https://marketplace.visualstudio.com/i
 | `tab`       | n, v    | Cycle next tab     |
 | `shift+tab` | n, v    | Cycle previous tab |
 
-**List navigation**
+### List navigation
+
+![List navigation demonstration gif](assets/list-navigation.gif)
 
 | Key         | Features                            |
 | ----------- | ----------------------------------- |
@@ -25,37 +29,67 @@ This extension provides keymaps for [Vim](https://marketplace.visualstudio.com/i
 | `tab`       | Cycle next suggestion or option     |
 | `shift+tab` | Cycle previous suggestion or option |
 
-**Common keymap**
+### Common keymaps
 
-| Key            | Mode    | Features                                   |
-| -------------- | ------- | ------------------------------------------ |
-| `>`            | v       | Indent selected lines                      |
-| `<`            | v       | Outdent selected lines                     |
-| `ctrl+shift+t` | n, v, i | Toggle terminal                            |
-| `ctrl+space`   | n, v, i | Open which key shortcut menu               |
+![Common keymaps demonstration gif](assets/common-keymaps.gif)
 
-**File explorer**
+| Key            | Mode    | Features                     |
+| -------------- | ------- | ---------------------------- |
+| `>`            | v       | Indent selected lines        |
+| `<`            | v       | Outdent selected lines       |
+| `ctrl+shift+t` | n, v, i | Toggle terminal              |
+| `ctrl+space`   | n, v, i | Open which key shortcut menu |
 
-| Key              | Features          |
+### File explorer
+
+![File explorer navigation demonstration gif](assets/file-navigation.gif)
+| Key | Features |
 | ---------------- | ----------------- |
-| `ctrl+e`         | Open explorer     |
-| `a`              | Create new file   |
+| `ctrl+e` | Open explorer |
+| `a` | Create new file |
 | `A` or `shift+a` | Create new folder |
-| `h`              | Collapse list     |
-| `j`              | Move down         |
-| `k`              | Move up           |
-| `l`              | Expand list       |
-| `o`              | Expand list       |
-| `r`              | Rename file       |
-| `enter`          | Select file       |
+| `h` | Collapse list |
+| `j` | Move down |
+| `k` | Move up |
+| `l` | Expand list |
+| `o` | Expand list |
+| `r` | Rename file |
+| `enter` | Select file |
 
-**More shortcuts**
+### Which Key (Common)
 
-| Key          | Features                     |
-| ------------ | ---------------------------- |
-| `ctrl+space` | Open which key shortcut menu |
+![Which Key common demonstration gif](assets/whichkey-common.gif)
 
-## Defaults
+| Key            | Features                     |
+| -------------- | ---------------------------- |
+| `ctrl+space`   | Open which key shortcut menu |
+| `ctrl+space+/` | Toggle comment line          |
+| `ctrl+space+;` | Open command palette         |
+| `ctrl+space+e` | Toggle file explorer         |
+| `ctrl+space+h` | Horizontal split             |
+| `ctrl+space+v` | Vertical split               |
+| `ctrl+space+z` | Toggle zen mode              |
+
+### Which Key (Buffers)
+
+![Which Key buffer demonstration gif](assets/whichkey-buffer.gif)
+
+| Key             | Features                           |
+| --------------- | ---------------------------------- |
+| `ctrl+space`    | Open which key shortcut menu       |
+| `ctrl+space+bn` | Cycle next editor                  |
+| `ctrl+space+bp` | Cycle previous editor              |
+| `ctrl+space+bc` | Close current editor               |
+| `ctrl+space+bu` | Reopen closed editor               |
+| `ctrl+space+bx` | Close other editors                |
+| `ctrl+space+bh` | Move current editor to left group  |
+| `ctrl+space+bj` | Move current editor to below group |
+| `ctrl+space+bk` | Move current editor to above group |
+| `ctrl+space+bl` | Move current editor to right group |
+
+Full list of shortcuts are available on `Feature Contributions`
+
+### Defaults
 
 ```
 "vim.useSystemClipboard": true,
@@ -79,13 +113,26 @@ This extension provides keymaps for [Vim](https://marketplace.visualstudio.com/i
 1. Open command palette `ctrl+shift+p`
 2. Open Keyboard Shortcuts (JSON)
 3. Add
+
 ```
 {
         "key": "ctrl+space",
         "command": "whichkey.show"
 },
 ```
+
 4. Save keyboard shortcuts
+5. Open command palette `ctrl+shift+p`
+6. Open User Settings (JSON)
+7. Add
+
+```
+"vim.handleKeys": {
+    "<C-space>": false
+  }
+```
+
+8. Save keyboard shortcuts
 
 ### Known Issues
 
