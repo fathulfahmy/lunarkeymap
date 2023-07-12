@@ -132,7 +132,7 @@ Full list of shortcuts are available on `Feature Contributions`
   }
 ```
 
-8. Save keyboard shortcuts
+8. Save user settings
 
 ### Known Issues
 
