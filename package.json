@@ -1,20 +1,37 @@
 {
   "name": "lunarkeymap",
   "displayName": "LunarKeymap",
-  "description": "Lunarvim inspired keybindings to achieve keyboard driven workflow in VS Code",
-  "version": "1.0.8",
-  "publisher": "fathulfahmy",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/fathulfahmy/lunarkeymap"
-  },
+  "description": "LunarVim inspired keybindings to achieve keyboard driven workflow in VS Code",
   "icon": "assets/lunarkeymap-logo.png",
+  "publisher": "fathulfahmy",
+  "author": {
+    "name": "fathulfahmy",
+    "email": "mfathulfahmy@gmail.com",
+    "url": "https://github.com/fathulfahmy"
+  },
+  "version": "1.0.9",
   "engines": {
     "vscode": "^1.74.0"
   },
   "categories": [
-    "Keymaps"
+    "Keymaps",
+    "Other"
   ],
+  "keywords": [
+    "lunarkeymap",
+    "vim",
+    "neovim",
+    "lunarvim",
+    "vscodevim"
+  ],
+  "homepage": "https://github.com/fathulfahmy/lunarkeymap",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fathulfahmy/lunarkeymap"
+  },
+  "bugs": {
+    "url": "https://github.com/fathulfahmy/lunarkeymap/issues"
+  },
   "contributes": {
     "configurationDefaults": {
       "vim.useSystemClipboard": true,
@@ -141,6 +158,15 @@
               "command": "workbench.action.previousEditor"
             },
             {
+              "key": "P",
+              "name": "Paste clipboard to buffer",
+              "type": "commands",
+              "commands": [
+                "editor.action.selectAll",
+                "editor.action.clipboardPasteAction"
+              ]
+            },
+            {
               "key": "s",
               "name": "Show all editor",
               "type": "command",
@@ -159,7 +185,7 @@
               "command": "workbench.action.closeOtherEditors"
             },
             {
-              "key": "y",
+              "key": "Y",
               "name": "Copy buffer to clipboard",
               "type": "commands",
               "commands": [
@@ -342,7 +368,7 @@
             },
             {
               "key": "p",
-              "name": "Publish",
+              "name": "Push",
               "type": "command",
               "command": "git.publish"
             },
@@ -765,7 +791,6 @@
         "key": "ctrl+j",
         "command": "-workbench.action.togglePanel"
       },
-
       {
         "key": "tab",
         "command": "workbench.action.nextEditor",
