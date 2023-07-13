@@ -1,5 +1,9 @@
 # Change Log
 
+## v1.0.11 (13-07-2023)
+**Fixed**
+- `ctrl+e` is now handled by vscode and not vim
+
 ## v1.0.9 (13-07-2023)
 **Added**
 - demonsration GIFs

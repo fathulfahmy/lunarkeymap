@@ -4,6 +4,8 @@ This extension provides keymaps for [Vim](https://marketplace.visualstudio.com/i
 
 ## Usage
 
+Full list of shortcuts are available on `Feature Contributions`
+
 ### Workspace navigation
 
 ![Workspace navigation demonstration gif](assets/workspace-navigation.gif)
@@ -15,8 +17,8 @@ This extension provides keymaps for [Vim](https://marketplace.visualstudio.com/i
 | `ctrl+k`    | n, v, i | Move focus up      |
 | `ctrl+l`    | n, v, i | Move focus right   |
 | `alt+j`     | n, v, i | Focus terminal     |
-| `tab`       | n, v    | Cycle next tab     |
-| `shift+tab` | n, v    | Cycle previous tab |
+| `tab`       | n       | Cycle next tab     |
+| `shift+tab` | n       | Cycle previous tab |
 
 ### List navigation
 
@@ -37,8 +39,8 @@ This extension provides keymaps for [Vim](https://marketplace.visualstudio.com/i
 | -------------- | ------- | ---------------------------- |
 | `>`            | v       | Indent selected lines        |
 | `<`            | v       | Outdent selected lines       |
-| `ctrl+shift+t` | n, v, i | Toggle terminal              |
-| `ctrl+space`   | n, v, i | Open which key shortcut menu |
+| `ctrl+shift+t` | n, v, i | Create/Toggle terminal       |
+| `ctrl+space`   | n, v, i | Open Which Key shortcut menu |
 
 ### File explorer
 
@@ -63,7 +65,7 @@ This extension provides keymaps for [Vim](https://marketplace.visualstudio.com/i
 
 | Key            | Features                     |
 | -------------- | ---------------------------- |
-| `ctrl+space`   | Open which key shortcut menu |
+| `ctrl+space`   | Open Which Key shortcut menu |
 | `ctrl+space+/` | Toggle comment line          |
 | `ctrl+space+;` | Open command palette         |
 | `ctrl+space+e` | Toggle file explorer         |
@@ -77,7 +79,7 @@ This extension provides keymaps for [Vim](https://marketplace.visualstudio.com/i
 
 | Key             | Features                           |
 | --------------- | ---------------------------------- |
-| `ctrl+space`    | Open which key shortcut menu       |
+| `ctrl+space`    | Open Which Key shortcut menu       |
 | `ctrl+space+bn` | Cycle next editor                  |
 | `ctrl+space+bp` | Cycle previous editor              |
 | `ctrl+space+bc` | Close current editor               |
@@ -88,7 +90,6 @@ This extension provides keymaps for [Vim](https://marketplace.visualstudio.com/i
 | `ctrl+space+bk` | Move current editor to above group |
 | `ctrl+space+bl` | Move current editor to right group |
 
-Full list of shortcuts are available on `Feature Contributions`
 
 ## Defaults
 
@@ -101,6 +102,7 @@ Full list of shortcuts are available on `Feature Contributions`
 "vim.sneak": true,
 "vim.handleKeys": {
   "<C-space>": false,
+  "<C-e>": false,
   "<C-h>": false,
   "<C-j>": false,
   "<C-k>": false,

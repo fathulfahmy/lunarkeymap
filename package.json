@@ -8,7 +8,7 @@
     "name": "fathulfahmy",
     "url": "https://github.com/fathulfahmy"
   },
-  "version": "1.0.10",
+  "version": "1.0.11",
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -21,9 +21,9 @@
     "vim",
     "neovim",
     "lunarvim",
-    "vscodevim"
+    "shortcut"
   ],
-  "homepage": "https://github.com/fathulfahmy/lunarkeymap",
+  "homepage": "https://marketplace.visualstudio.com/items?itemName=fathulfahmy.lunarkeymap",
   "repository": {
     "type": "git",
     "url": "https://github.com/fathulfahmy/lunarkeymap"
@@ -41,6 +41,7 @@
       "vim.sneak": true,
       "vim.handleKeys": {
         "<C-space>": false,
+        "<C-e>": false,
         "<C-h>": false,
         "<C-j>": false,
         "<C-k>": false,
@@ -634,6 +635,10 @@
         "command": "workbench.action.navigateDown"
       },
       {
+        "key": "ctrl+j",
+        "command": "-workbench.action.togglePanel"
+      },
+      {
         "key": "ctrl+k",
         "command": "workbench.action.navigateUp"
       },
@@ -641,6 +646,11 @@
         "key": "ctrl+k",
         "command": "-extension.vim_ctrl+k",
         "when": "editorTextFocus && vim.active && vim.use<C-k> && !inDebugRepl"
+      },
+      {
+        "key": "ctrl+k",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
       },
       {
         "key": "ctrl+l",
@@ -662,6 +672,21 @@
         "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
       },
       {
+        "key": "tab",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+      },
+      {
+        "key": "shift+tab",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+      },
+      {
+        "key": "shift+tab",
+        "command": "-acceptAlternativeSelectedSuggestion",
+        "when": "suggestWidgetVisible && textInputFocus && textInputFocus"
+      },
+      {
         "key": "ctrl+j",
         "command": "workbench.action.quickOpenNavigateNext",
         "when": "inQuickOpen"
@@ -672,20 +697,30 @@
         "when": "inQuickOpen"
       },
       {
+        "key": "tab",
+        "command": "workbench.action.quickOpenNavigateNext",
+        "when": "inQuickOpen"
+      },
+      {
+        "key": "shift+tab",
+        "command": "workbench.action.quickOpenNavigatePrevious",
+        "when": "inQuickOpen"
+      },
+      {
         "key": "shift+ctrl+e",
         "command": "actions.findWithSelection"
       },
       {
-        "key": "ctrl+e",
-        "command": "-actions.findWithSelection"
+        "key": "shift+ctrl+e",
+        "command": "-workbench.view.explorer"
       },
       {
         "key": "ctrl+e",
         "command": "workbench.view.explorer"
       },
       {
-        "key": "shift+ctrl+e",
-        "command": "-workbench.view.explorer"
+        "key": "ctrl+e",
+        "command": "-actions.findWithSelection"
       },
       {
         "key": "r",
@@ -698,9 +733,24 @@
         "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
       },
       {
+        "key": "j",
+        "command": "list.focusDown",
+        "when": "listFocus && explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+      },
+      {
+        "key": "k",
+        "command": "list.focusUp",
+        "when": "listFocus && explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+      },
+      {
         "key": "l",
         "command": "list.select",
         "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+      },
+      {
+        "key": "enter",
+        "command": "list.select",
+        "when": "explorerViewletVisible && filesExplorerFocus"
       },
       {
         "key": "o",
@@ -723,56 +773,6 @@
         "when": "filesExplorerFocus && !inputFocus"
       },
       {
-        "key": "j",
-        "command": "list.focusDown",
-        "when": "listFocus && explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-      },
-      {
-        "key": "k",
-        "command": "list.focusUp",
-        "when": "listFocus && explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-      },
-      {
-        "key": "enter",
-        "command": "list.select",
-        "when": "explorerViewletVisible && filesExplorerFocus"
-      },
-      {
-        "key": "tab",
-        "command": "selectNextSuggestion",
-        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-      },
-      {
-        "key": "shift+tab",
-        "command": "selectPrevSuggestion",
-        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-      },
-      {
-        "key": "tab",
-        "command": "workbench.action.quickOpenNavigateNext",
-        "when": "inQuickOpen"
-      },
-      {
-        "key": "shift+tab",
-        "command": "workbench.action.quickOpenNavigatePrevious",
-        "when": "inQuickOpen"
-      },
-      {
-        "key": "shift+tab",
-        "command": "-acceptAlternativeSelectedSuggestion",
-        "when": "suggestWidgetVisible && textInputFocus && textInputFocus"
-      },
-      {
-        "key": "shift+;",
-        "command": "insertPrevSuggestion",
-        "when": "hasOtherSuggestions && textInputFocus && textInputFocus && !inSnippetMode && !suggestWidgetVisible && config.editor.tabCompletion == 'on'"
-      },
-      {
-        "key": "ctrl+k",
-        "command": "workbench.action.focusActiveEditorGroup",
-        "when": "terminalFocus"
-      },
-      {
         "key": "alt+j",
         "command": "workbench.action.terminal.focus",
         "when": "!terminalFocus"
@@ -785,10 +785,6 @@
       {
         "key": "ctrl+shift+t",
         "command": "workbench.action.togglePanel"
-      },
-      {
-        "key": "ctrl+j",
-        "command": "-workbench.action.togglePanel"
       },
       {
         "key": "tab",
