@@ -8,7 +8,7 @@
     "name": "fathulfahmy",
     "url": "https://github.com/fathulfahmy"
   },
-  "version": "1.0.11",
+  "version": "1.0.12",
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -33,6 +33,7 @@
   },
   "contributes": {
     "configurationDefaults": {
+      "editor.acceptSuggestionOnEnter": "off",
       "vim.useSystemClipboard": true,
       "vim.useCtrlKeys": true,
       "vim.easymotion": true,
@@ -672,37 +673,12 @@
         "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
       },
       {
-        "key": "tab",
-        "command": "selectNextSuggestion",
-        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-      },
-      {
-        "key": "shift+tab",
-        "command": "selectPrevSuggestion",
-        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-      },
-      {
-        "key": "shift+tab",
-        "command": "-acceptAlternativeSelectedSuggestion",
-        "when": "suggestWidgetVisible && textInputFocus && textInputFocus"
-      },
-      {
         "key": "ctrl+j",
         "command": "workbench.action.quickOpenNavigateNext",
         "when": "inQuickOpen"
       },
       {
         "key": "ctrl+k",
-        "command": "workbench.action.quickOpenNavigatePrevious",
-        "when": "inQuickOpen"
-      },
-      {
-        "key": "tab",
-        "command": "workbench.action.quickOpenNavigateNext",
-        "when": "inQuickOpen"
-      },
-      {
-        "key": "shift+tab",
         "command": "workbench.action.quickOpenNavigatePrevious",
         "when": "inQuickOpen"
       },
