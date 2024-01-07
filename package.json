@@ -33,7 +33,6 @@
   },
   "contributes": {
     "configurationDefaults": {
-      "editor.acceptSuggestionOnEnter": "off",
       "vim.useSystemClipboard": true,
       "vim.useCtrlKeys": true,
       "vim.easymotion": true,

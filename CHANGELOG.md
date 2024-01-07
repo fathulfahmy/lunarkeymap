@@ -1,11 +1,19 @@
 # Change Log
 
+## v1.0.13 (07-01-2023)
+
+**Changed**
+
+- Set `enter` to accept suggestion by default
+
 ## v1.0.12 (28-12-2023)
 
 **Fixed**
+
 - `tab` can now be used to accept suggestion
 
 **Changed**
+
 - Removed `enter` to accept suggestion by default
 - Removed `tab` to cycle suggestion
 - Removed `shift+tab` to cycle suggestion

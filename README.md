@@ -10,26 +10,22 @@ Full list of shortcuts are available on `Feature Contributions`
 
 ![Workspace navigation demonstration gif](assets/workspace-navigation.gif)
 
-| Key         | Mode    | Features           |
-| ----------- | ------- | ------------------ |
-| `ctrl+h`    | n, v, i | Move focus left    |
-| `ctrl+j`    | n, v, i | Move focus down    |
-| `ctrl+k`    | n, v, i | Move focus up      |
-| `ctrl+l`    | n, v, i | Move focus right   |
-| `alt+j`     | n, v, i | Focus terminal     |
-| `tab`       | n       | Cycle next tab     |
-| `shift+tab` | n       | Cycle previous tab |
+| Key      | Mode    | Features         |
+| -------- | ------- | ---------------- |
+| `ctrl+h` | n, v, i | Move focus left  |
+| `ctrl+j` | n, v, i | Move focus down  |
+| `ctrl+k` | n, v, i | Move focus up    |
+| `ctrl+l` | n, v, i | Move focus right |
+| `alt+j`  | n, v, i | Focus terminal   |
 
 ### List navigation
 
 ![List navigation demonstration gif](assets/list-navigation.gif)
 
-| Key         | Features                            |
-| ----------- | ----------------------------------- |
-| `ctrl+j`    | Cycle next suggestion or option     |
-| `ctrl+k`    | Cycle previous suggestion or option |
-| `tab`       | Cycle next suggestion or option     |
-| `shift+tab` | Cycle previous suggestion or option |
+| Key      | Features                            |
+| -------- | ----------------------------------- |
+| `ctrl+j` | Cycle next suggestion or option     |
+| `ctrl+k` | Cycle previous suggestion or option |
 
 ### Common keymaps
 
@@ -39,7 +35,8 @@ Full list of shortcuts are available on `Feature Contributions`
 | -------------- | ------- | ---------------------------- |
 | `>`            | v       | Indent selected lines        |
 | `<`            | v       | Outdent selected lines       |
-| `ctrl+shift+t` | n, v, i | Create/Toggle terminal       |
+| `ctrl+space+t` | n, v, i | Toggle terminal              |
+| `ctrl+shift+t` | n, v, i | Toggle terminal              |
 | `ctrl+space`   | n, v, i | Open Which Key shortcut menu |
 
 ### File explorer
@@ -90,7 +87,6 @@ Full list of shortcuts are available on `Feature Contributions`
 | `ctrl+space+bk` | Move current editor to above group |
 | `ctrl+space+bl` | Move current editor to right group |
 
-
 ## Defaults
 
 ```
@@ -118,10 +114,20 @@ Full list of shortcuts are available on `Feature Contributions`
 3. Add
 
 ```
-{
-        "key": "ctrl+space",
-        "command": "whichkey.show"
-},
+[
+  {
+    "key": "ctrl+space",
+    "command": "whichkey.show"
+
+  },
+
+  // replace ctrl+space with your keybinding e.g.
+
+  {
+    "key": "ctrl+w",
+    "command": "whichkey.show"
+  },
+]
 ```
 
 4. Save keyboard shortcuts
@@ -131,15 +137,19 @@ Full list of shortcuts are available on `Feature Contributions`
 
 ```
 "vim.handleKeys": {
-    "<C-space>": false
-  }
+  "<C-space>": false,
+},
+
+// replace ctrl+space with your keybinding
+
+"vim.handleKeys": {
+  "<C-w>": false,
+},
 ```
 
 8. Save user settings
 
-## Known Issues
-
-- `shift+tab` in quick open is not supported
+<!-- ## Known Issues -->
 
 ## Installation
 
@@ -148,7 +158,7 @@ Full list of shortcuts are available on `Feature Contributions`
 1. Install Visual Studio Code
 2. Launch Visual Studio Code
 3. Open extension view `ctrl+shift+x`
-4. Search and install `Lunar Keymap`
+4. Search and install `LunarKeymap`
 5. Reload Visual Studio Code
 
 ## Contributing
