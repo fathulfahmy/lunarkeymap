@@ -1,93 +1,120 @@
-# LunarKeymap
+<div align="center">
 
-This extension provides keymaps for [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) and [Which Key](https://marketplace.visualstudio.com/items?itemName=VSpaceCode.whichkey) to achieve keyboard driven workflow in Visual Studio Code. Inspired by LunarVim.
+<img src="assets/logo.png" height="128" />
 
-## Usage
+<br>
 
-Full list of shortcuts are available on `Feature Contributions`
+<h2>LunarKeymap</h2>
 
-### Workspace navigation
+Keymaps for [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) and [Which Key](https://marketplace.visualstudio.com/items?itemName=VSpaceCode.whichkey) to enable efficient keyboard-driven workflow for developers. Inspired by LunarVim.
 
-![Workspace navigation demonstration gif](assets/workspace-navigation.gif)
+</div>
 
-| Key      | Mode    | Features         |
-| -------- | ------- | ---------------- |
-| `ctrl+h` | n, v, i | Move focus left  |
-| `ctrl+j` | n, v, i | Move focus down  |
-| `ctrl+k` | n, v, i | Move focus up    |
-| `ctrl+l` | n, v, i | Move focus right |
-| `alt+j`  | n, v, i | Focus terminal   |
+## 1.0 Installation
 
-### List navigation
+Install LunarKeymap via [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=fathulfahmy.lunarkeymap)
 
-![List navigation demonstration gif](assets/list-navigation.gif)
+## 2.0 Usage
 
-| Key      | Features                            |
-| -------- | ----------------------------------- |
-| `ctrl+j` | Cycle next suggestion or option     |
-| `ctrl+k` | Cycle previous suggestion or option |
+Full list of shortcuts are available on `Feature Contributions`.
 
-### Common keymaps
+### 2.1 Workspace Navigation
 
-![Common keymaps demonstration gif](assets/common-keymaps.gif)
+![common shortcuts demonstration gif](assets/workspace1.gif)
 
-| Key            | Mode    | Features                     |
-| -------------- | ------- | ---------------------------- |
-| `>`            | v       | Indent selected lines        |
-| `<`            | v       | Outdent selected lines       |
-| `ctrl+space+t` | n, v, i | Toggle terminal              |
-| `ctrl+shift+t` | n, v, i | Toggle terminal              |
-| `ctrl+space`   | n, v, i | Open Which Key shortcut menu |
+| Key      | Features            |
+| -------- | ------------------- |
+| `ctrl+h` | Move focus left     |
+| `ctrl+j` | Move focus down     |
+| `ctrl+k` | Move focus up       |
+| `ctrl+l` | Move focus right    |
+| `alt+j`  | Move focus terminal |
 
-### File explorer
+![more common shortcuts demonstration gif](assets/workspace2.gif)
 
-![File explorer navigation demonstration gif](assets/file-navigation.gif)
+| Key            | Features                            |
+| -------------- | ----------------------------------- |
+| `ctrl+j`       | Cycle next suggestion or option     |
+| `ctrl+k`       | Cycle previous suggestion or option |
+| `ctrl+shift+h` | Increase editor size                |
+| `ctrl+shift+l` | Decrease editor size                |
 
-| Key              | Features          |
-| ---------------- | ----------------- |
-| `ctrl+e`         | Open explorer     |
-| `a`              | Create new file   |
-| `A` or `shift+a` | Create new folder |
-| `h`              | Collapse list     |
-| `j`              | Move down         |
-| `k`              | Move up           |
-| `l`              | Expand list       |
-| `o`              | Expand list       |
-| `r`              | Rename file       |
-| `enter`          | Select file       |
+### 2.2 File Explorer
 
-### Which Key (Common)
+![file explorer demonstration](assets/explorer1.gif)
 
-![Which Key common demonstration gif](assets/whichkey-common.gif)
+| Key      | Features      |
+| -------- | ------------- |
+| `ctrl+e` | Open explorer |
+| `h`      | Collapse list |
+| `j`      | Move down     |
+| `k`      | Move up       |
+| `l`      | Expand list   |
+| `o`      | Expand list   |
 
-| Key            | Features                     |
-| -------------- | ---------------------------- |
-| `ctrl+space`   | Open Which Key shortcut menu |
-| `ctrl+space+/` | Toggle comment line          |
-| `ctrl+space+;` | Open command palette         |
-| `ctrl+space+e` | Toggle file explorer         |
-| `ctrl+space+h` | Horizontal split             |
-| `ctrl+space+v` | Vertical split               |
-| `ctrl+space+z` | Toggle zen mode              |
+![more file explorer demonstration](assets/explorer2.gif)
 
-### Which Key (Buffers)
+| Key       | Features       |
+| --------- | -------------- |
+| `a`       | Add new file   |
+| `shift+a` | Add new folder |
+| `d`       | Delete file    |
+| `x`       | Cut file       |
+| `y`       | Copy file      |
+| `p`       | Paste file     |
+| `r`       | Rename file    |
+| `enter`   | Select file    |
 
-![Which Key buffer demonstration gif](assets/whichkey-buffer.gif)
+### 2.3 Which Key (Common)
 
-| Key             | Features                           |
-| --------------- | ---------------------------------- |
-| `ctrl+space`    | Open Which Key shortcut menu       |
-| `ctrl+space+bn` | Cycle next editor                  |
-| `ctrl+space+bp` | Cycle previous editor              |
-| `ctrl+space+bc` | Close current editor               |
-| `ctrl+space+bu` | Reopen closed editor               |
-| `ctrl+space+bx` | Close other editors                |
-| `ctrl+space+bh` | Move current editor to left group  |
-| `ctrl+space+bj` | Move current editor to below group |
-| `ctrl+space+bk` | Move current editor to above group |
-| `ctrl+space+bl` | Move current editor to right group |
+![Which Key common demonstration](assets/whichkey1.gif)
 
-## Defaults
+| Key            | Features                  |
+| -------------- | ------------------------- |
+| `ctrl+space`   | Open shortcut menu        |
+| `ctrl+space+;` | Open command palette      |
+| `ctrl+space+/` | Toggle comment            |
+| `ctrl+space+?` | View all references       |
+| `ctrl+space+e` | Toggle file explorer      |
+| `ctrl+space+h` | Horizontally split editor |
+| `ctrl+space+v` | Vertically split editor   |
+| `ctrl+space+m` | Toggle minimap            |
+| `ctrl+space+x` | View extensions           |
+| `ctrl+space+z` | Toggle zen mode           |
+
+### 2.4 Which Key (Buffers/Editors)
+
+![Which Key buffer demonstration](assets/whichkey2.gif)
+
+| Key              | Features                           |
+| ---------------- | ---------------------------------- |
+| `ctrl+space`     | Open shortcut menu                 |
+| `ctrl+space+b+n` | Cycle next editor                  |
+| `ctrl+space+b+p` | Cycle previous editor              |
+| `ctrl+space+b+d` | Close current editor               |
+| `ctrl+space+b+u` | Reopen closed editor               |
+| `ctrl+space+b+x` | Close other editors                |
+| `ctrl+space+b+N` | Open new editor                    |
+| `ctrl+space+b+y` | Copy editor to clipboard           |
+| `ctrl+space+b+h` | Move current editor to left group  |
+| `ctrl+space+b+j` | Move current editor to below group |
+| `ctrl+space+b+k` | Move current editor to above group |
+| `ctrl+space+b+l` | Move current editor to right group |
+
+### 2.5 Which Key Menu
+
+- Buffer `b`
+- Debug `d`
+- Find & Replace `f`
+- Git `g`
+- LSP `l`
+- Open `o`
+- Peek `p`
+- Terminal `t`
+- UI toggles `u`
+- Window `w`
+
+## 3.0 Defaults
 
 ```
 "vim.useSystemClipboard": true,
@@ -107,7 +134,7 @@ Full list of shortcuts are available on `Feature Contributions`
 }
 ```
 
-## Change Which Key Shortcut Menu Keybinding
+## 4.0 Change Which Key Shortcut Menu Keybinding
 
 1. Open command palette `ctrl+shift+p`
 2. Open Keyboard Shortcuts (JSON)
@@ -130,7 +157,7 @@ Full list of shortcuts are available on `Feature Contributions`
 ]
 ```
 
-4. Save keyboard shortcuts
+4. Save file `ctrl+s`
 5. Open command palette `ctrl+shift+p`
 6. Open User Settings (JSON)
 7. Add
@@ -147,34 +174,23 @@ Full list of shortcuts are available on `Feature Contributions`
 },
 ```
 
-8. Save user settings
+8. Save user settings `ctrl+s`
 
 <!-- ## Known Issues -->
 
-## Installation
+## 5.0 Contributing
 
-[Go to Lunar Keymap on Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=fathulfahmy.lunarkeymap)
-
-1. Install Visual Studio Code
-2. Launch Visual Studio Code
-3. Open extension view `ctrl+shift+x`
-4. Search and install `LunarKeymap`
-5. Reload Visual Studio Code
-
-## Contributing
-
-1. Go to Lunar Keymap [GitHub repository](https://github.com/fathulfahmy/lunarkeymap).
+1. Go to LunarKeymap [GitHub repository](https://github.com/fathulfahmy/lunarkeymap).
 2. Open [package.json](https://github.com/fathulfahmy/lunarkeymap/blob/main/package.json).
 3. Add JSON object to [contributes.configurationDefaults](https://github.com/fathulfahmy/lunarkeymap/blob/main/package.json) or [contributes.keybindings](https://github.com/fathulfahmy/lunarkeymap/blob/main/package.json).
 4. Open a pull request.
 
-## License
+## 6.0 License
 
-This extension is licensed under the [GNU General Publick License v3.0](https://github.com/fathulfahmy/lunarkeymap/blob/main/LICENSE)
+This extension is licensed under the [GNU General Public License v3.0](https://github.com/fathulfahmy/lunarkeymap/blob/main/LICENSE)
 
-## Reference
+## 7.0 Special thanks
 
-1. VSCode with embedded Neovim, chris@machine  
-   [Open youtube link](https://www.youtube.com/watch?v=g4dXZ0RQWdw)
-2. THE BEST VIM CONFIG FOR VSCODE | configure vscode like vim, Joaquin Varela  
-   [Open youtube link](https://www.youtube.com/watch?v=Vkm4bc2Y0AA&t=215s)
+1. [LunarVim](https://github.com/LunarVim/LunarVim/tree/4625145d0278d4a039e55c433af9916d93e7846a/utils/vscode_config)
+2. [Christian Chiarulli](https://www.youtube.com/watch?v=g4dXZ0RQWdw)
+3. [Joaquin Varela](https://www.youtube.com/watch?v=Vkm4bc2Y0AA&t=215s)

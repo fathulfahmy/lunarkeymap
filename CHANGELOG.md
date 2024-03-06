@@ -1,6 +1,43 @@
 # Change Log
 
-## v1.0.13 (07-01-2023)
+## v1.1.0 (07-03-2024)
+
+**Changed**
+
+- `ctrl+shift+t` toggle terminal to toggle or focus terminal
+- `ctrl+space+t` to terminal menu (new, toggle, focus)
+- `ctrl+space+T` to `ctrl+space+u` toggle UI menu
+- `ctrl+space+b+Y` to `ctrl+space+y` copy buffer to clipboard
+- `ctrl+space+d+d` to `ctrl+space+s` start debug
+
+**Added**
+
+- `d` delete file
+- `p` paste file
+- `x` cut file
+- `y` copy file
+- `ctrl+shift+h` increase editor size
+- `ctrl+shift+l` decrease editor size
+- `ctrl+space+?` view all references
+- `ctrl+space+l` LSP menu (refactor, autofix, definition, declaration, format, symbol)
+- `ctrl+space+o` open menu (directory, file, recent)
+- `ctrl+space+p` peek menu (definition, declaration, implementation, reference)
+- `ctrl+space+x` view vscode extension
+- `ctrl+space+g+F` git pull from
+- `ctrl+space+g+h` git history
+- `ctrl+space+g+j` git next change
+- `ctrl+space+g+k` git previous change
+- `ctrl+space+g+P` git pull
+- `ctrl+space+g+t` git create tag
+- `ctrl+space+g+T` git delete tag
+- `ctrl+space+w+c` to `ctrl+space+w+d` close editor group
+
+**Removed**
+
+- `ctrl+space+c` close current editor
+- `ctrl+space+b+P` paste clipboard to buffer
+
+## v1.0.13 (07-01-2024)
 
 **Changed**
 
@@ -24,7 +61,7 @@
 
 - `ctrl+e` is now handled by vscode and not vim
 
-## v1.0.9 (13-07-2023)
+## v1.0.9 (12-07-2023)
 
 **Added**
 
