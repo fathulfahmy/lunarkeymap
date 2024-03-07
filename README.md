@@ -12,7 +12,7 @@ Keymaps for [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.
 
 ## 1.0 Installation
 
-Install LunarKeymap via [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=fathulfahmy.lunarkeymap)
+Install LunarKeymap via [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=fathulfahmy.lunarkeymap).
 
 ## 2.0 Usage
 
@@ -178,20 +178,27 @@ Full list of shortcuts are available on `Feature Contributions`.
 
 8. Save user settings `ctrl+s`
 
-<!-- ## Known Issues -->
+## 5.0 Known Issues
 
-## 5.0 Contributing
+### Integration with Neovim
+
+This extension does not support vscode/vim neovim mode or any other neovim extension.  
+Configuration to both VS Code and user's Neovim is required in order for Neovim to work.  
+VS Code extensions do not have access to user's application (Neovim).  
+Follow Chris Chiarulli's tutorial on [how to embed Neovim in VS Code](https://www.youtube.com/watch?v=g4dXZ0RQWdw).
+
+## 6.0 Contributing
 
 1. Go to LunarKeymap [GitHub repository](https://github.com/fathulfahmy/lunarkeymap).
 2. Open [package.json](https://github.com/fathulfahmy/lunarkeymap/blob/main/package.json).
 3. Add JSON object to [contributes.configurationDefaults](https://github.com/fathulfahmy/lunarkeymap/blob/main/package.json) or [contributes.keybindings](https://github.com/fathulfahmy/lunarkeymap/blob/main/package.json).
 4. Open a pull request.
 
-## 6.0 License
+## 7.0 License
 
-This extension is licensed under the [MIT License](https://github.com/fathulfahmy/lunarkeymap/blob/main/LICENSE)
+This extension is licensed under the [MIT License](https://github.com/fathulfahmy/lunarkeymap/blob/main/LICENSE).
 
-## 7.0 Special thanks
+## 8.0 Special thanks
 
 - [LunarVim](https://github.com/LunarVim/LunarVim/tree/4625145d0278d4a039e55c433af9916d93e7846a/utils/vscode_config)
 - [Christian Chiarulli](https://www.youtube.com/watch?v=g4dXZ0RQWdw)

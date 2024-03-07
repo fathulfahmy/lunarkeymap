@@ -22,7 +22,7 @@
     "Other"
   ],
   "keywords": [
-    "lunar",
+    "keybindings",
     "keymap",
     "vim",
     "lunarkeymap",
@@ -36,6 +36,7 @@
   "bugs": {
     "url": "https://github.com/fathulfahmy/lunarkeymap/issues"
   },
+  "pricing": "Free",
   "contributes": {
     "configurationDefaults": {
       "vim.useSystemClipboard": true,

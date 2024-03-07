@@ -1,5 +1,9 @@
 # Change Log
 
+## v1.2.4 (07-03-2024)
+**Added**
+Notes on incompatibility with Neovim
+
 ## v1.2.0 (07-03-2024)
 
 **Changed**
