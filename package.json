@@ -2,12 +2,17 @@
   "name": "lunarkeymap",
   "displayName": "LunarKeymap",
   "description": "Keybindings to enable efficient keyboard-driven workflow for developers. Inspired by LunarVim.",
-  "icon": "assets/logo.png",
   "publisher": "fathulfahmy",
   "author": {
     "name": "fathulfahmy",
     "url": "https://fathulfahmy.is-a.dev"
   },
+  "icon": "assets/logo.png",
+  "galleryBanner": {
+    "color": "#8839ef",
+    "theme": "light"
+  },
+  "license": "MIT",
   "version": "1.1.0",
   "engines": {
     "vscode": "^1.74.0"
@@ -909,11 +914,6 @@
         "when": "terminalFocus"
       },
       {
-        "key": "ctrl+k",
-        "command": "-extension.vim_ctrl+k",
-        "when": "editorTextFocus && vim.active && vim.use<C-k> && !inDebugRepl"
-      },
-      {
         "key": "ctrl+l",
         "command": "workbench.action.navigateRight"
       },
@@ -923,14 +923,29 @@
         "command": "workbench.action.focusActiveEditorGroup"
       },
       {
-        "key": "tab",
-        "command": "workbench.action.nextEditor",
-        "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+        "key": "ctrl+j",
+        "command": "selectNextSuggestion",
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
       },
       {
-        "key": "shift+tab",
-        "command": "workbench.action.previousEditor",
-        "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+        "key": "ctrl+k",
+        "command": "selectPrevSuggestion",
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+      },
+      {
+        "key": "ctrl+j",
+        "command": "workbench.action.quickOpenNavigateNext",
+        "when": "inQuickOpen"
+      },
+      {
+        "key": "ctrl+k",
+        "command": "workbench.action.quickOpenNavigatePrevious",
+        "when": "inQuickOpen"
+      },
+      {
+        "key": "alt+j",
+        "command": "workbench.action.terminal.focus",
+        "when": "!terminalFocus"
       },
       {
         "key": "shift+ctrl+e",
@@ -1024,34 +1039,19 @@
         "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
       },
       {
-        "key": "ctrl+j",
-        "command": "selectNextSuggestion",
-        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
-      },
-      {
-        "key": "ctrl+k",
-        "command": "selectPrevSuggestion",
-        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
-      },
-      {
-        "key": "ctrl+j",
-        "command": "workbench.action.quickOpenNavigateNext",
-        "when": "inQuickOpen"
-      },
-      {
-        "key": "ctrl+k",
-        "command": "workbench.action.quickOpenNavigatePrevious",
-        "when": "inQuickOpen"
-      },
-      {
         "key": "shift+;",
         "command": "insertPrevSuggestion",
         "when": "hasOtherSuggestions && textInputFocus && textInputFocus && !inSnippetMode && !suggestWidgetVisible && config.editor.tabCompletion == 'on'"
       },
       {
-        "key": "alt+j",
-        "command": "workbench.action.terminal.focus",
-        "when": "!terminalFocus"
+        "key": "tab",
+        "command": "workbench.action.nextEditor",
+        "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+      },
+      {
+        "key": "shift+tab",
+        "command": "workbench.action.previousEditor",
+        "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
       },
       {
         "key": "ctrl+shift+t",

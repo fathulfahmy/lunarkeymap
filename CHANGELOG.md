@@ -1,5 +1,16 @@
 # Change Log
 
+## v1.1.1 (07-03-2024)
+
+**Changed**
+
+- GPL v3.0 to MIT License
+
+**Fixed**
+
+- `tab` cycle next editor
+- `shift+tab` cycle previous editor
+
 ## v1.1.0 (07-03-2024)
 
 **Changed**
@@ -41,19 +52,18 @@
 
 **Changed**
 
-- Set `enter` to accept suggestion by default
+- `tab` to `enter` to accept suggestion
 
 ## v1.0.12 (28-12-2023)
 
-**Fixed**
-
-- `tab` can now be used to accept suggestion
-
 **Changed**
 
-- Removed `enter` to accept suggestion by default
-- Removed `tab` to cycle suggestion
-- Removed `shift+tab` to cycle suggestion
+- `enter` to `tab` to accept suggestion
+
+**Removed**
+
+- `tab` to cycle suggestion
+- `shift+tab` to cycle suggestion
 
 ## v1.0.11 (13-07-2023)
 
@@ -66,7 +76,7 @@
 **Added**
 
 - demonsration GIFs
-- paste from clipboard Which Key shortcut
+- `ctrl+space+b+P` paste from clipboard shortcut
 
 ## v1.0.8 (12-07-2023)
 
@@ -76,42 +86,40 @@
 
 **Changed**
 
-- disabled vscode multiline editing via `ctrl+d` by default
-- enabled vscodevim move page down via `ctrl+d` by default
+- `ctrl+d` is now handled by vim and not vscode
 
 ## v1.0.7 (10-07-2023)
 
 **Fixed**
 
-- `ctrl+hjkl` not working
-
-**Added**
-
-- Dependencies will be uninstalled automatically upon lunarkeymap uninstallation
+- `ctrl+h` not working
+- `ctrl+j` not working
+- `ctrl+k` not working
+- `ctrl+l` not working
 
 **Changed**
 
-- `ctrl+a` is handled by vim
-- `ctrl+f` is handled by vim
-- `ctrl+c` is handled by vim
-- `ctrl+x` is handled by vim
-- `ctrl+z` is handled by vim
-- `ctrl+y` is handled by vim
+- Dependencies will be installed/uninstalled automatically
+- `ctrl+a` is now handled by vim
+- `ctrl+f` is now handled by vim
+- `ctrl+c` is now handled by vim
+- `ctrl+x` is now handled by vim
+- `ctrl+z` is now handled by vim
+- `ctrl+y` is now handled by vim
+
+**Removed**
+
 - `ctrl+n` to remove search highlight is removed
 
 ## v1.0.4 (09-07-2023)
 
 **Changed**
 
-- Changed extension name from `lunarkeymap` to `LunarKeymap`
+- Changed extension display name from `lunarkeymap` to `LunarKeymap`
 - Visual Studio Code >= `1.74.0` is now supported
 
 ## v1.0.3 (08-07-2023)
 
 **Fixed**
 
-- Enabled `ctrl+v` to work as expected in vim
-
-**Changed**
-
-- Paste via `ctrl+v` is now disabled in normal mode
+- `ctrl+v` work as expected in vim

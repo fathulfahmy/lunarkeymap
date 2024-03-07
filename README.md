@@ -22,13 +22,15 @@ Full list of shortcuts are available on `Feature Contributions`.
 
 ![common shortcuts demonstration gif](assets/workspace1.gif)
 
-| Key      | Features            |
-| -------- | ------------------- |
-| `ctrl+h` | Move focus left     |
-| `ctrl+j` | Move focus down     |
-| `ctrl+k` | Move focus up       |
-| `ctrl+l` | Move focus right    |
-| `alt+j`  | Move focus terminal |
+| Key         | Features              |
+| ----------- | --------------------- |
+| `ctrl+h`    | Move focus left       |
+| `ctrl+j`    | Move focus down       |
+| `ctrl+k`    | Move focus up         |
+| `ctrl+l`    | Move focus right      |
+| `alt+j`     | Move focus terminal   |
+| `tab`       | Cycle next editor     |
+| `shift+tab` | Cycle previous editor |
 
 ![more common shortcuts demonstration gif](assets/workspace2.gif)
 
@@ -191,6 +193,6 @@ This extension is licensed under the [GNU General Public License v3.0](https://g
 
 ## 7.0 Special thanks
 
-1. [LunarVim](https://github.com/LunarVim/LunarVim/tree/4625145d0278d4a039e55c433af9916d93e7846a/utils/vscode_config)
-2. [Christian Chiarulli](https://www.youtube.com/watch?v=g4dXZ0RQWdw)
-3. [Joaquin Varela](https://www.youtube.com/watch?v=Vkm4bc2Y0AA&t=215s)
+- [LunarVim](https://github.com/LunarVim/LunarVim/tree/4625145d0278d4a039e55c433af9916d93e7846a/utils/vscode_config)
+- [Christian Chiarulli](https://www.youtube.com/watch?v=g4dXZ0RQWdw)
+- [Joaquin Varela](https://www.youtube.com/watch?v=Vkm4bc2Y0AA&t=215s)
