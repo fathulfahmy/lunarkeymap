@@ -10,7 +10,7 @@
   "icon": "assets/logo.png",
   "galleryBanner": {
     "color": "#8839ef",
-    "theme": "light"
+    "theme": "dark"
   },
   "license": "MIT",
   "version": "1.2.1",
