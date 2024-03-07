@@ -1,6 +1,6 @@
 # Change Log
 
-## v1.1.1 (07-03-2024)
+## v1.2.0 (07-03-2024)
 
 **Changed**
 
@@ -52,7 +52,7 @@
 
 **Changed**
 
-- `tab` to `enter` to accept suggestion
+`tab` to `enter` to accept suggestion
 
 ## v1.0.12 (28-12-2023)
 
@@ -69,7 +69,7 @@
 
 **Fixed**
 
-- `ctrl+e` is now handled by vscode and not vim
+`ctrl+e` is now handled by vscode and not vim
 
 ## v1.0.9 (12-07-2023)
 
@@ -122,4 +122,4 @@
 
 **Fixed**
 
-- `ctrl+v` work as expected in vim
+`ctrl+v` work as expected in vim

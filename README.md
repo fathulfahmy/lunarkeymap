@@ -189,7 +189,7 @@ Full list of shortcuts are available on `Feature Contributions`.
 
 ## 6.0 License
 
-This extension is licensed under the [GNU General Public License v3.0](https://github.com/fathulfahmy/lunarkeymap/blob/main/LICENSE)
+This extension is licensed under the [MIT License](https://github.com/fathulfahmy/lunarkeymap/blob/main/LICENSE)
 
 ## 7.0 Special thanks
 
