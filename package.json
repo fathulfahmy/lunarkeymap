@@ -589,6 +589,12 @@
               "name": "File",
               "type": "command",
               "command": "workbench.action.files.openFile"
+            },
+            {
+              "key": "w",
+              "name": "Workspace",
+              "type": "command",
+              "command": "workbench.action.openWorkspace"
             }
           ]
         },

@@ -1,4 +1,7 @@
 # Change Log
+## v1.3.0 (16-07-2024)
+**Added**
+Open workspace binding `ctrl+o+w`
 
 ## v1.2.4 (07-03-2024)
 **Added**
