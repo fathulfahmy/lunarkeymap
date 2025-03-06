@@ -1,19 +1,19 @@
 {
   "name": "lunarkeymap",
-  "displayName": "LunarKeymap",
-  "description": "Keybindings to enable efficient keyboard-driven workflow for developers. Inspired by LunarVim.",
+  "displayName": "Lunar Keymap",
+  "description": "Enhancing developer experience by enabling a keyboard-driven workflow. Inspired by LunarVim.",
   "publisher": "fathulfahmy",
   "author": {
     "name": "fathulfahmy",
     "url": "https://fathulfahmy.is-a.dev"
   },
-  "icon": "assets/logo.png",
+  "icon": "docs/logo.png",
   "galleryBanner": {
     "color": "#8839ef",
     "theme": "dark"
   },
   "license": "MIT",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -34,7 +34,7 @@
     "url": "https://github.com/fathulfahmy/lunarkeymap"
   },
   "bugs": {
-    "url": "https://github.com/fathulfahmy/lunarkeymap/issues"
+    "url": "https://github.com/fathulfahmy/lunarkeymap/issues/new?labels=bug&template=bug-report---.md"
   },
   "pricing": "Free",
   "contributes": {
@@ -1090,8 +1090,5 @@
   "extensionDependencies": [
     "vscodevim.vim",
     "VSpaceCode.whichkey"
-  ],
-  "devDependencies": {
-    "prettier": "3.2.5"
-  }
+  ]
 }
