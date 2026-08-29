@@ -1,3 +1,5 @@
+
+
 <a id="readme-top"></a>
 
 <!-- PROJECT SHIELDS -->
@@ -78,7 +80,7 @@ LunarKeymap is a Visual Studio Code extension to enhance developer experience by
 
 ### Prerequisites
 
-- Visual Studio Code
+- Visual Studio Code >= 1.74.0
 
 ### Installation
 
